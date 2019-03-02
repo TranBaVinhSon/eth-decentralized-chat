@@ -1,23 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Header></Header>
+    <div class="columns is-mobile">
+      <WhisperApp class="column is-half is-offset-one-quarter"></WhisperApp>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WhisperApp from "./components/WhisperApp"
+import Header from "./components/Header"
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    WhisperApp,
+    Header
   }
 }
 </script>
 
 <style>
-#app {
+.container {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
