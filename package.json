@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "buefy": "^0.7.3",
+    "bulma-extensions": "^6.2.1",
     "vue": "^2.6.6"
   },
   "devDependencies": {

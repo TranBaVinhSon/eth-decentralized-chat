@@ -1,8 +1,27 @@
 <template lang="html">
   <div>
-		Asymetric key id: {{keyId}}
+    <b-tooltip label="Your asymetric key id"
+      position="is-left">
+      <button class="button is-dark">
+        {{keyId}}
+      </button>
+    </b-tooltip>
+    
     <br>
-		Public key: {{pubKey}}
+    
+    <b-tooltip label="Your asymetric public key"
+      position="is-left">
+      <button class="button is-dark">
+        {{pubKey}}
+      </button>
+    </b-tooltip>
+    
+    <div class="container">
+      <p>
+        <b-input v-model="pubKey" disabled></b-input>
+      </p>
+      
+    </div>
 	</div>
 </template>
 
@@ -18,12 +37,12 @@ export default {
   methods: {
     generateKey() {
       /* eslint-disable no-console */
-      console.log("son123")
       this.$emit("new-keypair");
     }
   }
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+
 </style>
