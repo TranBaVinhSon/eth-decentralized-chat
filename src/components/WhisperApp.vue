@@ -66,13 +66,13 @@ export default {
       text: "",
       name: "",
       asymKeyId: null,
+      asymPubKey: "",
       symKeyId: null,
       symPassword: "",
       asym: true,
       configured: false,
       topic: defaultTopic,
-      recipientPubKey: defaultRecipientPubKey,
-      asymPubKey: ""
+      recipientPubKey: defaultRecipientPubKey
     }
     this.shh.newKeyPair().then(id => {
       data.asymKeyId = id
